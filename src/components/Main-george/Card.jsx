@@ -1,9 +1,10 @@
 import React from "react";
 
+
 const Card = ({ product }) => {
   return (
     <div key={product.id} className="group relative bg-slate-200 border-slate-950 shadow-2xl rounded hover:scale-105 duration-200">
-      <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80 ">
+      <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-60 ">
         <img
           src={product.imageSrc}
           alt={product.imageAlt}
@@ -29,5 +30,7 @@ const Card = ({ product }) => {
     </div>
   );
 };
+
+
 
 export default Card;
